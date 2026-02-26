@@ -1,0 +1,167 @@
+body {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 20px;
+}
+
+#container {
+    background: #2d2d2d;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 1px solid #444;
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+h1 {
+    color: #ff6b6b;
+    margin-top: 0;
+    text-shadow: 0 0 10px rgba(255,107,107,0.3);
+    font-size: 32px;
+}
+
+h2 {
+    color: #4ecdc4;
+    font-size: 18px;
+    margin: 5px 0 20px 0;
+    font-weight: normal;
+}
+
+#display-container {
+    background: #000;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #4ecdc4;
+    display: inline-block;
+}
+
+canvas {
+    image-rendering: pixelated;
+    display: block;
+    background: black;
+}
+
+#game-selector {
+    margin: 20px 0;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.game-btn {
+    background: #333;
+    color: #fff;
+    border: 2px solid #4ecdc4;
+    padding: 12px 24px;
+    font-family: 'Courier New', monospace;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.2s;
+    min-width: 140px;
+}
+
+.game-btn:hover {
+    background: #4ecdc4;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.game-btn.active {
+    background: #ff6b6b;
+    border-color: #ff6b6b;
+    color: #000;
+}
+
+.controls-panel {
+    background: #333;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 20px 0;
+    border: 1px solid #444;
+}
+
+.controls-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    text-align: left;
+    color: #4ecdc4;
+}
+
+.control-item {
+    background: #3d3d3d;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border-left: 3px solid #ff6b6b;
+}
+
+.key {
+    background: #4ecdc4;
+    color: #000;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-right: 8px;
+}
+
+#file-section {
+    margin: 20px 0;
+    padding: 15px;
+    background: #333;
+    border-radius: 8px;
+}
+
+#romLoader {
+    background: #3d3d3d;
+    color: #4ecdc4;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    margin: 10px auto;
+    border: 1px solid #4ecdc4;
+}
+
+.action-btn {
+    background: #ff6b6b;
+    color: #000;
+    border: none;
+    padding: 12px 30px;
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 8px;
+    margin: 10px;
+    transition: all 0.2s;
+}
+
+.action-btn:hover {
+    background: #ff5252;
+    transform: scale(1.05);
+}
+
+#status {
+    color: #4ecdc4;
+    margin: 15px 0;
+    padding: 10px;
+    background: #3d3d3d;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.footer {
+    color: #666;
+    font-size: 12px;
+    margin-top: 20px;
+}

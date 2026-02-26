@@ -1,0 +1,9 @@
+┌─────────────────────────────────────┐
+│         My Emulator                 │
+├─────────────────────────────────────┤
+│  CPU: 35 instructions, 16 registers │
+│  Memory: 4KB RAM                    │
+│  Display: 64x32 monochrome          │
+│  Input: 16-key hex keypad           │
+│  Sound: Simple tone generator       │
+└─────────────────────────────────────┘

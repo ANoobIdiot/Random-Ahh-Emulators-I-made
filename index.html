@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multi-Game 8080 Arcade Emulator</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="container">
+        <h1>🕹️ MULTI-GAME 8080 ARCADE</h1>
+        <h2>Intel 8080 • 9 Classic Games • One Emulator</h2>
+        
+        <div id="display-container">
+            <canvas id="display" width="224" height="256"></canvas>
+        </div>
+        
+        <div id="game-selector"></div>
+        
+        <div class="controls-panel">
+            <div style="color: #ff6b6b; margin-bottom: 10px; font-weight: bold;">🎮 CURRENT CONTROLS</div>
+            <div class="controls-grid" id="controls-display"></div>
+        </div>
+        
+        <div id="file-section">
+            <div style="color: #4ecdc4; margin-bottom: 10px;">📂 LOAD ROM FILES</div>
+            <input type="file" id="romLoader" accept=".bin,.rom,.e,.f,.g,.h,.1,.2" multiple>
+            <div style="color: #666; font-size: 12px; margin-top: 5px;">
+                Select multiple ROM files for your chosen game
+            </div>
+        </div>
+        
+        <button id="startBtn" class="action-btn">▶ START</button>
+        <button id="resetBtn" class="action-btn">↺ RESET</button>
+        
+        <div id="status">Select a game and load its ROM files</div>
+        <div class="footer">Cycle-Accurate 8080 Emulation • 2MHz CPU • 60 FPS</div>
+    </div>
+
+    <script type="importmap">
+        {
+            "imports": {
+                "./i8080.js": "./js/i8080.js",
+                "./hardware/": "./js/hardware/"
+            }
+        }
+    </script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
